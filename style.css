@@ -7,6 +7,12 @@
   height: 64px;
   padding: 0 10px 0 10px;
   align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
 }
 
 #header .logo a {
@@ -72,7 +78,7 @@
   transition: 0.3s;
   padding: 0 10px;
   margin: 0 2px;
-  border: solid 1px #dfdfdf;
+  border: solid 2px #dfdfdf;
   border-radius: 4px;
   color: #828282;
   display: flex;
@@ -80,6 +86,19 @@
   height: 40px;
   justify-content: center;
   text-decoration: none;
+}
+
+.navigate i {
+  color: #828282;
+}
+
+.navigate a {
+  text-decoration: none !important;
+}
+
+#btn-download > i {
+  color: white;
+  font-size: 15px;
 }
 
 .navigate a .bi:hover,
@@ -205,6 +224,16 @@
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+.footer-links i,
+.footer-services i {
+  color: #00a6eb;
+  font-size: 10px;
+}
+
+.footer-links a,
+.footer-services a {
+}
+
 .footer-top h3 {
   width: 216px;
   height: 32px;
@@ -238,7 +267,7 @@
   padding: 0 12px;
 }
 
-.footer-contact p {
+#footer .footer-contact p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
@@ -279,10 +308,8 @@
   margin-top: 32px;
 }
 
-.social-icon .bi {
+.social-icon i {
   color: white;
-  width: 18px;
-  height: 17.6px;
   background-color: #47b2e4;
   border-radius: 50%;
   padding: 8px;
@@ -334,10 +361,11 @@
 #contact {
   height: 936px;
   padding: 60px 0;
+  overflow: inherit;
 }
 #contact .container {
-  margin: 0 64px;
-  padding: 0 12px;
+  padding: 0 64px;
+  width: 100%;
 }
 .section-title {
   height: 180.4px;
@@ -542,9 +570,10 @@
   /* footer bottom 부분 */
   .footer-bottom {
     flex-direction: column;
+    align-items: center;
   }
   .credits {
-    margin-left: 0;
+    margin-left: 0 !important;
     text-align: center;
     margin-top: 5px;
   }
@@ -568,7 +597,7 @@
   #contact .contact-input {
     height: 700px;
     width: 90%;
-    margin-bottom: 30px;
+    margin-top: 20px;
   }
 }
 /* 나현 */
