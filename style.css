@@ -1425,12 +1425,33 @@ html {
   justify-content: space-around;
 }
 
-#hero .text {
+#hero .hero-row > * {
+  max-width: 100%;
+}
+
+#hero .col-text {
   width: 456px;
   padding: 0 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#hero .col-button {
+  justify-content: center !important;
+}
+
+@media (min-width: 992px) {
+  #hero .col-button {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #hero .text {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 
 #hero h1 {
@@ -1449,18 +1470,26 @@ html {
   font-size: 24px;
 }
 
-#hero .gointro {
+#hero .col-button {
   display: flex;
 }
 
 #hero .watchvideo {
-  font-size: 12px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   transition: 0.5s;
   margin: 10px 0 0 25px;
   color: #fff;
   line-height: 1;
+}
+
+#hero .watchvideo i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
 }
 
 #hero .hero-getstarted {
@@ -1478,13 +1507,14 @@ html {
 }
 
 #hero .watchvideo span {
-  /* font-size: 22px;
-  margin-right: 5px; */
+  font-size: 16px;
+  margin-right: 5px;
   line-height: 0;
   color: #fff;
   font-size: 22px;
   transition: 0.3s;
   margin-right: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #hero .hero-getstarted:hover {
