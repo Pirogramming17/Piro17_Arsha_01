@@ -368,7 +368,6 @@
   width: 100%;
 }
 .section-title {
-  height: 180.4px;
   padding: 0 0 30px;
   text-align: center;
 }
@@ -426,6 +425,7 @@
   bottom: 0;
   left: calc(50% - 20px);
 }
+
 .map {
   width: 42%;
 }
@@ -2293,13 +2293,13 @@ svg {
 }
 
 #about .container .section-title h2 {
-  text-align: center;
-  padding-bottom: 30px;
-  display: block;
-  color: #37517e;
   font-size: 32px;
   font-weight: bold;
-  font-family: "Jost" sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
 }
 
 #about .first,
@@ -2308,7 +2308,7 @@ svg {
 }
 
 #about .first p {
-  /*font-family: "Open-Sans" sans-serif;*/
+  font-family: "Open-Sans" sans-serif;
   justify-content: space-between;
   size: 16px;
   color: #444444;
@@ -2323,7 +2323,7 @@ svg {
 }
 
 #about .second p {
-  /*font-family: "Open-Sans" sans-serif;*/
+  font-family: "Open-Sans" sans-serif;
   justify-content: space-between;
   size: 16px;
   color: #444444;
@@ -2358,7 +2358,6 @@ svg {
   bottom: 0;
   left: calc(50% - 20px);
 }
-
 #about .first i {
   color: #47b2e4;
 }
