@@ -5,6 +5,403 @@
 
 /* 은서 */
 
+/* 다른 영역에도 적용될 수 있음*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+div {
+  display: block;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 16px;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+#services .container {
+  width: 100%;
+  padding-right: 140px;
+  padding-left: 140px;
+}
+/**/
+
+#services .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#services .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+#services .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#services .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#services .section-title p {
+  margin-bottom: 0;
+}
+
+#services .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#services .col {
+  display: flex;
+  width: 350px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#services .icon-box {
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+#services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+#services i {
+  color: #47b2e4;
+  font-size: 36px;
+}
+
+#services h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+#services a {
+  color: #37517e;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+#services p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(./img/team/cta-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+#cta .container {
+  padding-right: 140px;
+  padding-left: 140px;
+}
+
+#cta .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+#cta .col-text {
+  text-align: left !important;
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+#cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#cta p {
+  color: #fff;
+  display: inline-block;
+}
+
+#cta .text-center {
+  text-align: center !important;
+}
+
+#cta .col-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#cta .cta-btn:hover {
+  border: 2px solid rgb(71, 178, 228);
+  background-color: rgb(71, 178, 228);
+  color: #fff;
+}
+
+#cta .align-middle {
+  vertical-align: middle !important;
+}
+
+#cta a {
+  text-decoration: none;
+}
+
+#portfolio .container {
+  padding-right: 140px;
+  padding-left: 140px;
+}
+
+#portfolio .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#portfolio h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+#portfolio .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#portfolio .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#portfolio .section-title p {
+  margin-bottom: 0;
+}
+
+#portfolio-flters {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio-flters li:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+#portfolio-flters {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portfolio .row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#portfolio .portfolio-img {
+  position: relative;
+}
+
+#portfolio .portfolio-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#portfolio .portfolio-info {
+  position: absolute;
+}
+
+#portfolio .portfolio-img img:hover + .portfolio-info,
+#portfolio .portfolio-info:hover {
+  left: 0px;
+  bottom: 0;
+  z-index: 1;
+  right: 0px;
+  transition: all 0.6s;
+  background: rgba(55, 81, 126, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#portfolio .portfolio-img {
+  overflow: hidden;
+}
+
+#portfolio .portfolio-img img {
+  transition: all 0.6s ease-in-out;
+}
+
+#portfolio .portfolio-img:hover img {
+  transform: scale(1.2);
+}
+
+#portfolio .col {
+  padding: 20px;
+}
+
+#portfolio .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+#portfolio .portfolio-info p {
+  color: #f9fcfe;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#portfolio .text,
+#portfolio .icon {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+#portfolio .icon i {
+  padding-left: 10px;
+}
+
+#portfolio .portfolio-info .details-link {
+  right: 10px;
+}
+
+#portfolio .portfolio-info i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 /* 병우 */
 
 /* 명지 */
