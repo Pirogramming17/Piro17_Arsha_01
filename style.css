@@ -554,10 +554,15 @@ a:-webkit-any-link {
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
+  line-height: 1.2;
 }
 
 #pricing h4 sup {
   font-size: 28px;
+  top: -0.5em;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
 #pricing h4 span {
