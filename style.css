@@ -1707,3 +1707,219 @@ html {
 }
 
 /* 명지 */
+.section-bg {
+    background-color: #f3f5fa;
+}
+
+
+#team .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#team .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+#team .section-title h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  #team .section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+
+#team .section-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+h1 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#team .section-title p {
+    margin-bottom: 0;
+    text-align: center;
+    margin: 1rem;
+}
+p {
+    margin-top: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#team .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#team .row>* {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+div {
+    display: block;
+}
+
+#team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    width: 650px;
+    display: flex;
+}
+
+#team .member .img-fluid {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+#team .mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+
+#team .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img, svg {
+    vertical-align: middle;
+}
+
+#team .member .member-info {
+    padding-left: 30px;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+#team .member h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+#team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+#team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+}
+
+#team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#team .member .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+}
+a :hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #47b2e4;
+}
+
+a {
+    color: #37517e;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+#team{
+    padding:60px 0;
+    }
+
+#team .member .social a i {
+    color: #37517e;
+    font-size: 16px;
+    margin: 0 2px;
+}
+#team .member .social a i:hover {
+    color: #eff2f8;
+  }
+
