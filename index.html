@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/f578b19b63.js"
       crossorigin="anonymous"
@@ -33,6 +32,7 @@
       type="image/x-icon"
       href="https://bootstrapmade.com/assets/img/logo.png"
     />
+    
     <!-- sbw폰트 -->
     <link
       rel="stylesheet"
@@ -184,18 +184,18 @@
       <section id="hero">
         <div class="container">
           <div class="hero-row">
-            <div class="col-text order-2">
+            <div class="text">
               <h1>Better Solutions For Your Business</h1>
               <h2>
                 We are team of talented designers making websites with Bootstrap
               </h2>
-              <div class="col-button">
+              <div class="gointro">
                 <a class="hero-getstarted" href="#about">Get Started</a>
                 <a
                   class="watchvideo"
                   href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
                 >
-                  <i class="fa-regular fa-circle-play"></i>
+                  <span class="material-symbols-outlined"> play_circle </span>
                   <span>Watch Video</span>
                 </a>
               </div>
@@ -235,7 +235,48 @@
         <!-- 여기까지가 내 할 일 -->
         <section id="about"></section>
         <section id="why-us"></section>
-        <section id="skills"></section>
+        <section id="skills">
+          <div class="container">
+            <div id="skills-row">
+              <div id="skills-img"><img src="./img/skills.png" /></div>
+              <div id="skills-box">
+                <h3>
+                  Voluptatem dignissimos provident quasi corporis voluptates
+                </h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div id="skills-bar">
+                  <div class="progress">
+                    <span class="skill">HTML <i class="val">100%</i></span>
+                    <div class="progress-all">
+                      <div id="progress-html"></div>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <span class="skill">CSS <i class="val">90%</i></span>
+                    <div class="progress-all">
+                      <div id="progress-css"></div>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <span class="skill">JAVASCRIPT <i class="val">75%</i></span>
+                    <div class="progress-all">
+                      <div id="progress-js"></div>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <span class="skill">PHOTOSHOP <i class="val">55%</i></span>
+                    <div class="progress-all">
+                      <div id="progress-ps"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="services" class="services section-bg">
           <div class="container">
             <div class="section-title">
@@ -640,7 +681,168 @@
             </div>
           </div>
         </section>
-        <section id="team"></section>
+        <section id="team" class="team section-bg">
+          <div class="container aos-init section-bg aos-animate" data-aos="fade-up">
+            <div class="section-title">
+              <h1>
+                Team
+              </h1>
+              <p>
+                magnam dolores commodi suscipit. Necessitatibus eius consequatur 
+                ex aloquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos Quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas. 
+              </p>
+        
+            </div>
+          
+            <div class="row">
+              <div class="col-lg-6">
+                
+                <div class="member d-flwx align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic">
+                    <img src="./img/team_/team-1.jpg" class="img-fluid">
+                  </div>
+
+                  <div class="member-info">
+                    <h2>Walter White</h2>
+                    <span>Chief Executive Officer</span>
+                    <p>Explicabo voluptatem mollotia et repellat qui dolorum quasi </p>
+                    <div class="social">
+                      <a href>
+                        <i class="fa-brands fa-twitter">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-facebook-f">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-instagram-square">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-linkedin">
+
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flwx align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic">
+                    <img src="./img/team_/team-2.jpg" class="img-fluid">
+                  </div>
+                  <div class="member-info">
+                    <h2>Sarah Jhonson</h2>
+                    <span>Product Manager</span>
+                    <p>Aut maioses voluptates amet et quis praesentium qui senda para</p>
+                    <div class="social">
+                      <a href>
+                       <i class="fa-brands fa-twitter">
+
+                       </i>
+                      </a>
+                      <a href>
+                       <i class="fa-brands fa-facebook-f">
+
+                       </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-instagram-square">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-linkedin">
+
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member d-flwx align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic">
+                    <img src="./img/team_/team-3.jpg" class="img-fluid">
+                  </div>
+                  <div class="member-info">
+                    <h2>William Anderson</h2>
+                    <span>CTO</span>
+                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <div class="social">
+                      <a href>
+                        <i class="fa-brands fa-twitter">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-facebook-f">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-instagram-square">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-linkedin">
+
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4" >
+                <div class="member d-flwx align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic">
+                    <img src="./img/team_/team-4.jpg" class="img-fluid">
+                  </div>
+                  <div class="member-info">
+                    <h2>Amanda Jepson</h2>
+                    <span>Accountant</span>
+                    <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                    <div class="social">
+                      <a href>
+                        <i class="fa-brands fa-twitter">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-facebook-f">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-instagram-square">
+
+                        </i>
+                      </a>
+                      <a href>
+                        <i class="fa-brands fa-linkedin">
+
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
         <section id="pricing">
           <div class="container">
             <div class="section-title">
@@ -752,7 +954,87 @@
             </div>
           </div>
         </section>
-        <section id="faq"></section>
+        <section id="faq">
+          <div class="container">
+            <div class="section-title">
+              <h2>FREQUENTLY ASKED QUESTIONS</h2>
+              <p>
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
+            </div>
+            <div class="faq-list">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  <a class="title title1">
+                    Non consectetur a erat nam at lectus urna duis?
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div id="faq-list-1">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  <a class="title title2">
+                    Feugiat scelerisque varius morbi enim nunc? 
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div id="faq-list-2">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  <a class="title title3">
+                    Dolor sit amet consectetur adipiscing elit?  
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div id="faq-list-3">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  <a class="title title4">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?   
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div id="faq-list-4">
+                    <p>
+                      Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  <a class="title title5">
+                    Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?  
+                    <i class="fa-solid fa-chevron-up"></i>  
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div id="faq-list-5">
+                    <p>
+                      Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </section>
 
         <section id="contact">
           <div class="container">
