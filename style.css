@@ -63,12 +63,13 @@ a:-webkit-any-link {
   background-color: #f3f5fa;
 }
 
+/**/
+
 #services .container {
   width: 100%;
   padding-right: 140px;
   padding-left: 140px;
 }
-/**/
 
 #services .section-title {
   text-align: center;
@@ -114,13 +115,25 @@ a:-webkit-any-link {
 #services .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  #services .row {
+    justify-content: center;
+  }
 }
 
 #services .col {
   display: flex;
   width: 350px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px;
+  transition: all ease-in-out 0.4s;
+}
+
+#services .col:hover {
+  transform: translate(0, -20px);
+  transition: all ease-in-out 0.4s;
 }
 
 #services .icon-box {
@@ -143,6 +156,24 @@ a:-webkit-any-link {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 24px;
+}
+
+#services .col:hover a {
+  color: #47b2e4;
+}
+
+@media (min-width: 768px) {
+  #services .col {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #services .col {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 }
 
 #services a {
@@ -178,10 +209,28 @@ a:-webkit-any-link {
   justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  #cta .row {
+    justify-content: center;
+  }
+}
+
+#cta .text-center {
+  text-align: center !important;
+}
+
 #cta .col-text {
-  text-align: left !important;
   flex: 0 0 auto;
   width: 75%;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  #cta .col-text {
+    flex: 0 0 auto;
+    width: 75%;
+    text-align: center;
+  }
 }
 
 #cta h3 {
@@ -193,10 +242,6 @@ a:-webkit-any-link {
 #cta p {
   color: #fff;
   display: inline-block;
-}
-
-#cta .text-center {
-  text-align: center !important;
 }
 
 #cta .col-btn {
@@ -326,6 +371,20 @@ a:-webkit-any-link {
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 992px) {
+  #portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 #portfolio .portfolio-img {
   position: relative;
 }
@@ -338,6 +397,7 @@ a:-webkit-any-link {
 
 #portfolio .portfolio-info {
   position: absolute;
+  height: auto;
 }
 
 #portfolio .portfolio-img img:hover + .portfolio-info,
@@ -373,14 +433,14 @@ a:-webkit-any-link {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  color: #fff;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #portfolio .portfolio-info p {
   color: #f9fcfe;
   font-size: 14px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 #portfolio .text,
@@ -398,7 +458,7 @@ a:-webkit-any-link {
 }
 
 #portfolio .portfolio-info i {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
 }
 
