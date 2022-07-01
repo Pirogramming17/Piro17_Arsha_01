@@ -1491,6 +1491,10 @@ html {
   color: #5e5e5e;
 }
 
+#faq .fa-chevron-up {
+  color: #00a6eb;
+}
+
 #faq-list-1,
 #faq-list-2,
 #faq-list-3,
@@ -1851,7 +1855,7 @@ html {
 }
 
 /* 명지 */
-.section-bg {
+#team .section-bg {
   background-color: #f3f5fa;
 }
 
@@ -1906,7 +1910,7 @@ html {
   position: relative;
   color: #37517e;
 }
-h1 {
+#team h1 {
   display: block;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
@@ -1919,7 +1923,7 @@ h1 {
   text-align: center;
   margin: 1rem;
 }
-p {
+#team p {
   margin-top: 0;
   display: block;
   margin-block-start: 1em;
@@ -1943,7 +1947,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-div {
+#team div {
   display: block;
 }
 
@@ -1980,10 +1984,6 @@ svg {
   padding-left: 30px;
 }
 
-user agent stylesheet div {
-  display: block;
-}
-
 #team .member h2 {
   font-weight: 700;
   margin-bottom: 5px;
@@ -2014,14 +2014,6 @@ user agent stylesheet div {
   font-size: 14px;
 }
 
-user agent stylesheet p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 #team .member .social {
   margin-top: 12px;
   display: flex;
@@ -2038,7 +2030,7 @@ user agent stylesheet p {
   height: 32px;
   background: #eff2f8;
 }
-a :hover {
+#team a :hover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2048,12 +2040,12 @@ a :hover {
   background: #47b2e4;
 }
 
-a {
+#team a {
   color: #37517e;
   text-decoration: none;
 }
 
-a:-webkit-any-link {
+#team a:-webkit-any-link {
   cursor: pointer;
 }
 
