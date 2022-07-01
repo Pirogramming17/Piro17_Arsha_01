@@ -364,7 +364,7 @@
   overflow: inherit;
 }
 #contact .container {
-  padding: 0 64px;
+  padding: 0 100px;
   width: 100%;
 }
 .section-title {
@@ -674,8 +674,7 @@ html {
 
 #services .container {
   width: 100%;
-  padding-right: 140px;
-  padding-left: 140px;
+  padding: 0 100px;
 }
 
 #services .section-title {
@@ -803,8 +802,7 @@ html {
 }
 
 #cta .container {
-  padding-right: 140px;
-  padding-left: 140px;
+  padding: 0 100px;
 }
 
 #cta .row {
@@ -886,8 +884,7 @@ html {
 }
 
 #portfolio .container {
-  padding-right: 140px;
-  padding-left: 140px;
+  padding: 0 100px;
 }
 
 #portfolio .section-title {
@@ -1071,8 +1068,7 @@ html {
 
 #pricing .container {
   width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 0 100px;
 }
 
 #pricing .section-title {
@@ -1283,6 +1279,155 @@ html {
   display: flex !important;
 }
 
+#faq {
+  background-color: #f3f5fa;
+}
+
+#faq .container {
+  padding: 0 100px;
+}
+
+#faq .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#faq h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+#faq .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#faq .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#faq .section-title p {
+  margin-bottom: 0;
+}
+
+#faq .faq-list {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .faq .faq-list {
+    padding: 100px;
+  }
+}
+
+#faq ul {
+  padding: 0;
+  list-style: none;
+}
+
+#faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#faq .fa-circle-question {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #47b2e4;
+}
+
+#faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+#faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+#faq .fa-chevron-down,
+#faq .fa-chevron-up {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#faq .fa-chevron-down {
+  color: #5e5e5e;
+}
+
+#faq-list-1,
+#faq-list-2,
+#faq-list-3,
+#faq-list-4,
+#faq-list-5 {
+  display: none;
+}
+
+#faq .faq-list .title:hover ~ #faq-list-1,
+#faq .faq-list .title:hover ~ #faq-list-2,
+#faq .faq-list .title:hover ~ #faq-list-3,
+#faq .faq-list .title:hover ~ #faq-list-4,
+#faq .faq-list .title:hover ~ #faq-list-5 {
+  display: unset;
+}
+
+#faq .title1 .fa-chevron-up,
+#faq .title2 .fa-chevron-up,
+#faq .title3 .fa-chevron-up,
+#faq .title4 .fa-chevron-up,
+#faq .title5 .fa-chevron-up {
+  display: none;
+}
+
+#faq .faq-list .title1:hover .fa-chevron-up,
+#faq .faq-list .title2:hover .fa-chevron-up,
+#faq .faq-list .title3:hover .fa-chevron-up,
+#faq .faq-list .title4:hover .fa-chevron-up,
+#faq .faq-list .title5:hover .fa-chevron-up {
+  display: unset;
+}
+
+#faq .faq-list .title1:hover .fa-chevron-down,
+#faq .faq-list .title2:hover .fa-chevron-down,
+#faq .faq-list .title3:hover .fa-chevron-down,
+#faq .faq-list .title4:hover .fa-chevron-down,
+#faq .faq-list .title5:hover .fa-chevron-down {
+  display: none;
+}
+
 /* 병우 */
 
 * {
@@ -1454,7 +1599,7 @@ html {
   justify-content: space-around;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   #hero .order-2 {
     order: 2 !important;
   }
