@@ -1,5 +1,10 @@
 @import "./reset.css";
 /* 선희 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 #header {
   display: flex;
   width: 100%;
@@ -8,7 +13,7 @@
   align-items: center;
 }
 
-.logo {
+#header .logo a {
   width: 236.6px;
   height: 32px;
   display: flex;
@@ -18,13 +23,26 @@
   text-decoration: none;
   font-size: 24px;
   letter-spacing: -0.8px;
-  font-weight: 500;
+  font-weight: 700;
 }
+
 #header-logo {
   width: 31px;
   height: 30px;
-  margin-right: 8px;
+  margin-right: 6px;
+  color: #1e5f8d;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  font-weight: bold;
 }
+
+#header-logo strong {
+  font-weight: bold;
+}
+
 .preview-devices > ul {
   display: flex;
   width: 162px;
@@ -70,6 +88,17 @@
   align-items: center;
 }
 
+.navigate-arrow {
+  width: 58px;
+  height: 40px;
+}
+
+.navigate-arrow bi {
+  width: 11.67px;
+  height: 19.09px;
+  font-weight: 800;
+}
+
 #btn-download {
   background: #00a6eb;
   border: solid 1px #00a6eb;
@@ -81,6 +110,187 @@
 .highlight1 {
   color: #00a6eb;
 }
+
+#footer .footer-newsletter {
+  padding: 50px 0;
+  background: #f3f5fa;
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+  height: 261.5px;
+  display: flex;
+  justify-content: center;
+}
+
+#box-newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+}
+
+#box-newsletter p {
+  margin-bottom: 16px;
+}
+
+#box-newsletter input[type="email"] {
+  border-radius: 50px;
+  width: 336px;
+  height: 42.5px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+#box-newsletter p {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+#box-newsletter input[type="submit"] {
+  width: 113.03px;
+  height: 42.5px;
+  border-radius: 50px;
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #47b2e4;
+  color: #fff;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-around;
+  height: 339.2px;
+  padding: 60px 0 30px;
+  background: #fff;
+}
+
+.footer-top h3 {
+  width: 216px;
+  height: 32px;
+  color: #37517e;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #37517e;
+  font-family: "Open Sans", sans-serif;
+}
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+  font-family: "Jost", sans-serif;
+  margin: 0 0 8px;
+  padding: 0 0 12px;
+}
+
+.footer-contact,
+.footer-links,
+.footer-services,
+.footer-network {
+  width: 216px;
+  margin: 0 0 30px;
+  padding: 0 12px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Jost", sans-serif;
+  color: #5e5e5e;
+}
+
+#footer .footer-top ol a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#footer .footer-top li {
+  padding: 10px 0;
+}
+
+#footer .bi-chevron-right {
+  color: #47b2e4;
+  font-size: 9px;
+  font-weight: bolder;
+}
+
+.footer-network p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  margin: 0 0 16px;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  width: 216px;
+  height: 36px;
+  margin-top: 32px;
+}
+
+.social-icon .bi {
+  color: white;
+  width: 18px;
+  height: 17.6px;
+  background-color: #47b2e4;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 4px;
+}
+
+.highlight2 {
+  font-weight: bolder;
+}
+
+#footer .footer-bottom {
+  padding: 30px 79px;
+  color: #fff;
+  height: 81px;
+  background: #37517e;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-bottom .credits {
+  margin-left: auto;
+  font-size: 13px;
+}
+#footer .footer-bottom .credits a {
+  color: #47b2e4;
+}
+
+#footer .footer-bottom .copyright {
+  font-size: 14px;
+}
+
+#footer .footer-bottom .copyright strong {
+  font-weight: bolder;
+}
+
 /* 나현 */
 
 /* 은서 */
