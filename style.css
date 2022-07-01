@@ -615,8 +615,7 @@
   padding: 60px 0;
 }
 #skills .container {
-  padding: 0 5%;
-  margin: 20px;
+  padding: 0 100px;
 }
 #skills-row {
   display: flex;
@@ -1472,6 +1471,7 @@ html {
   padding: 0 30px;
   outline: none;
   cursor: pointer;
+  color: #37517e;
 }
 
 #faq .faq-list p {
@@ -1535,6 +1535,14 @@ html {
   display: none;
 }
 
+#faq .faq-list .title1:hover,
+#faq .faq-list .title2:hover,
+#faq .faq-list .title3:hover,
+#faq .faq-list .title4:hover,
+#faq .faq-list .title5:hover {
+  color: #00a6eb;
+}
+
 #why-us {
   background-color: #f3f5fa;
   padding: 60px 0;
@@ -1549,6 +1557,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 #why-us .col-text {
@@ -1598,13 +1607,36 @@ html {
 }
 
 #why-us .col-image {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: stretch !important;
-  flex: 0 0 auto;
+  width: 50%;
+}
+
+#why-us .col-image img {
   max-width: 100%;
-  height: 400px;
+  height: auto;
+}
+
+#why-us .col-test {
+  order: 1;
+}
+
+#why-us .col-image {
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  #why-us .col-image {
+    order: -1;
+  }
+  #why-us .col-test {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  #why-us .col-image {
+    flex: 0 0 auto;
+    width: 80%;
+  }
 }
 
 #why-us .accordion-list ul {
@@ -1696,18 +1728,6 @@ html {
 #why-us .accordion-list .title2:hover,
 #why-us .accordion-list .title3:hover {
   color: #00a6eb;
-}
-
-@media (max-width: 575px) {
-  #why-us .col-image {
-    min-height: 200px;
-  }
-}
-
-@media (max-width: 992px) {
-  #why-us .col-image {
-    min-height: 400px;
-  }
 }
 
 /* 병우 */
@@ -2285,7 +2305,7 @@ svg {
 }
 
 #about {
-  padding: 60px 10%;
+  padding: 60px 100px;
 }
 
 #about .row-content {
