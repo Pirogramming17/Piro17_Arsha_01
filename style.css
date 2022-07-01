@@ -599,7 +599,110 @@
     width: 90%;
     margin-top: 20px;
   }
+
+  #skills-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills .container {
+    padding: 0 1%;
+    margin: 0;
+  }
 }
+/* skills 부분 */
+#skills {
+  padding: 60px 0;
+}
+#skills .container {
+  padding: 0 5%;
+  margin: 20px;
+}
+#skills-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#skills-img,
+#skills-box {
+  width: 50%;
+  margin: 10px;
+}
+
+#skills-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills-box > h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #37517e;
+}
+
+#skills-box > p {
+  font-style: italic !important;
+  font: #444;
+}
+
+#skills-bar .progress {
+  width: 100%;
+}
+
+#skills-bar .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #37517e;
+  font-size: 12px;
+}
+
+#skills-bar .progress i {
+  float: right;
+}
+
+#skills-bar .progress-all {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 12px;
+}
+
+#progress-html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #37517e;
+}
+
+#progress-css {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 12px;
+  background-color: #37517e;
+}
+
+#progress-js {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  height: 12px;
+  background-color: #37517e;
+}
+
+#progress-ps {
+  margin: 0;
+  padding: 0;
+  width: 55%;
+  height: 12px;
+  background-color: #37517e;
+}
+
 /* 나현 */
 
 /* 은서 */
@@ -1388,6 +1491,10 @@ html {
   color: #5e5e5e;
 }
 
+#faq .fa-chevron-up {
+  color: #00a6eb;
+}
+
 #faq-list-1,
 #faq-list-2,
 #faq-list-3,
@@ -1536,6 +1643,12 @@ html {
   margin-left: 5px;
 }
 
+@media (max-width: 1160px) {
+  #preview-nav ul {
+    display: none;
+  }
+}
+
 #preview-nav .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
@@ -1568,6 +1681,22 @@ html {
   font-size: 14px;
   border: 2px solid #47b2e4;
   font-weight: 600;
+}
+
+#preview-nav #nav-menu {
+  display: none;
+  color: white;
+  margin-right: 66px;
+}
+
+@media (max-width: 1160px) {
+  #preview-nav #nav-menu {
+    display: inline-block;
+  }
+
+  #for-mid {
+    justify-content: space-between;
+  }
 }
 
 #hero {
@@ -1721,6 +1850,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #clients .clients-row img {
@@ -1737,6 +1867,10 @@ html {
   visibility: visible;
 }
 
+#clients .clients-media {
+  width: 16%;
+}
+
 @keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -1747,4 +1881,231 @@ html {
   }
 }
 
+@media (max-width: 1160px) {
+  #hero {
+    height: 120vh;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #clients .clients-media {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  #clients .clients-media {
+    flex: 0 0 auto;
+    width: 45%;
+  }
+}
+
 /* 명지 */
+#team .section-bg {
+  background-color: #f3f5fa;
+}
+
+#team .container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 75px;
+  padding-left: 75px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#team .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#team .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+#team .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#team .section-title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+#team h1 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#team .section-title p {
+  margin-bottom: 0;
+  text-align: center;
+  margin: 1rem;
+}
+#team p {
+  margin-top: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#team .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#team .row > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+#team div {
+  display: block;
+}
+
+#team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  width: 650px;
+  display: flex;
+}
+
+#team .member .img-fluid {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+#team .mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+#team .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+
+#team .member .member-info {
+  padding-left: 30px;
+}
+
+#team .member h2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+#team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+#team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+#team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+#team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#team .member .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+#team a :hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #47b2e4;
+}
+
+#team a {
+  color: #37517e;
+  text-decoration: none;
+}
+
+#team a:-webkit-any-link {
+  cursor: pointer;
+}
+
+#team {
+  padding: 60px 0;
+}
+
+#team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+#team .member .social a i:hover {
+  color: #eff2f8;
+}
