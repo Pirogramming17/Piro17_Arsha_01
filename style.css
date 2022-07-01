@@ -626,14 +626,14 @@ a {
 a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .section-bg {
   background-color: #f3f5fa;
 }
 
-#.container {
+.container {
   width: 100%;
 }
 
@@ -1322,6 +1322,7 @@ html {
 
 #preview-nav li a {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
