@@ -2004,7 +2004,7 @@ html {
   background-color: #0d8793;
 }
 
-#hero .watchvideo:hover span:first-child {
+#hero .watchvideo:hover i {
   color: #47b2e4;
 }
 
