@@ -1,9 +1,5 @@
 @import "./reset.css";
 /* 선희  */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
 
 #header {
   display: flex;
@@ -160,7 +156,7 @@ body {
 
 #box-newsletter input[type="email"] {
   border-radius: 50px;
-  width: 336px;
+  width: calc(100% - 100px);
   height: 42.5px;
   border: 0;
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
@@ -181,14 +177,32 @@ body {
   background: #47b2e4;
   color: #fff;
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  position: absolute;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+}
+.footer-top {
+  padding: 60px 0 30px 0;
+}
+
+.footer-top-row {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-top .container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height: 339.2px;
-  padding: 60px 0 30px;
-  background: #fff;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
 .footer-top h3 {
@@ -311,6 +325,11 @@ body {
   background-color: #00a6eb;
 }
 
+#box-newsletter .input-form {
+  position: relative;
+  text-align: left;
+}
+
 /* 선희 contact 부분 */
 #contact {
   height: 936px;
@@ -358,6 +377,27 @@ body {
   justify-content: space-around;
 }
 
+#contact .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#contact .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
 .map {
   width: 42%;
 }
@@ -467,6 +507,69 @@ body {
 }
 .submit-btn {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .jsh-hidden {
+    display: none;
+  }
+  .navigate {
+    margin: 0;
+  }
+  .navigate {
+    width: 20%;
+  }
+  #header {
+    justify-content: space-around;
+  }
+
+  /* footer-top 부분 */
+
+  .footer-top {
+    padding: 60px 0 30px;
+  }
+  .footer-top .footer-top-row {
+    width: 100%;
+    padding: 0 10% 0 10%;
+  }
+
+  .footer-top .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /* footer bottom 부분 */
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .credits {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  #box-newsletter {
+    width: 70%;
+  }
+
+  /* contact 부분 */
+  #contact {
+    height: 1705px;
+  }
+
+  #contact .row {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #contact .map,
+  #contact .contact-input {
+    height: 700px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 /* 나현 */
 
