@@ -637,6 +637,10 @@ a:-webkit-any-link {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /**/
 
 #services .container {
@@ -1204,6 +1208,50 @@ a:-webkit-any-link {
 #pricing .featured .buy-btn:hover {
   background: #3c9cc9;
   color: #fff;
+}
+
+#back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+#back-to-top .align-items-center {
+  align-items: center !important;
+}
+
+#back-to-top .justify-content-center {
+  justify-content: center !important;
+}
+
+#back-to-top .d-flex {
+  display: flex !important;
 }
 
 /* 병우 */
