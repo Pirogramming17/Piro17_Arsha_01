@@ -291,6 +291,159 @@ body {
   font-weight: bolder;
 }
 
+/* 선희 contact 부분 */
+#contact {
+  height: 936px;
+  padding: 60px 0;
+}
+#contact .container {
+  margin: 0 64px;
+  padding: 0 12px;
+}
+.section-title {
+  height: 180.4px;
+  padding: 0 0 30px;
+  text-align: center;
+}
+#contact .section-title h2 {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+}
+#contact .section-title p {
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+#contact .row {
+  display: flex;
+}
+
+#contact .map,
+.contact-input {
+  height: 635.6px;
+  border-top: solid #00a6eb;
+  border-bottom: solid #00a6eb;
+  padding: 30px;
+  margin: 0 14px;
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.map {
+  width: 42%;
+}
+.contact-input {
+  width: 58%;
+}
+
+.map .bi {
+  color: #00a6eb;
+  font-size: 20px;
+  background-color: #e7f5fb;
+  border-radius: 50%;
+  padding: 8px;
+  width: 45px;
+  height: 44px;
+  text-align: center;
+}
+
+.address,
+.email,
+.phone {
+  display: flex;
+}
+.location-text,
+.email-text,
+.phone-text {
+  margin-left: 13px;
+}
+.map h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+.map p {
+  font-family: "Open Sans", sans-serif;
+  color: #6182b4;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-input label {
+  padding-bottom: 8px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+.row-first {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 0 20px;
+  padding: 0 12px 8px;
+}
+.row-first input,
+.subject-row input {
+  height: 44px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.subject-row,
+.msg-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px 8px;
+  margin: 0 0 20px;
+}
+
+.msg-row textarea {
+  height: 232;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.contact-input button {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.submit-btn {
+  text-align: center;
+}
 /* 나현 */
 
 /* 은서 */
