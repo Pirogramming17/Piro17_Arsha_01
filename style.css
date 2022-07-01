@@ -1421,8 +1421,14 @@ html {
 #hero .hero-row {
   margin: 64.75px 10% 0 10%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  #hero .order-2 {
+    order: 2 !important;
+  }
 }
 
 #hero .hero-row > * {
