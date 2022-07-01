@@ -63,6 +63,10 @@ a:-webkit-any-link {
   background-color: #f3f5fa;
 }
 
+#.container {
+  width: 100%;
+}
+
 /**/
 
 #services .container {
@@ -507,10 +511,6 @@ a:-webkit-any-link {
 
 #pricing .row {
   padding-top: 40px;
-}
-
-#.container {
-  width: 100%;
 }
 
 #pricing .row {
