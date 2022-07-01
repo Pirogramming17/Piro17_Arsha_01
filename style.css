@@ -1976,6 +1976,13 @@ html {
   margin-right: 8px;
 }
 
+.gointro {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+}
+
 #hero .hero-getstarted {
   font-family: "Jost", sans-serif;
   font-weight: 500;
@@ -2283,4 +2290,128 @@ svg {
 }
 #team .member .social a i:hover {
   color: #eff2f8;
+}
+
+#about {
+  padding: 60px 10%;
+}
+
+#about .row-content {
+  display: flex;
+}
+
+#about .container .section-title h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  display: block;
+  color: #37517e;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Jost" sans-serif;
+}
+
+#about .first,
+#about .second {
+  width: 50%;
+}
+
+#about .first p {
+  /*font-family: "Open-Sans" sans-serif;*/
+  justify-content: space-between;
+  size: 16px;
+  color: #444444;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 25px;
+}
+
+#about .second p {
+  /*font-family: "Open-Sans" sans-serif;*/
+  justify-content: space-between;
+  size: 16px;
+  color: #444444;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 25px;
+}
+
+#about .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#about .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#about .first i {
+  color: #47b2e4;
+}
+
+#about .first li {
+  margin-bottom: 10px;
+}
+
+#about .third {
+  padding-left: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+#about .fourth {
+  padding-left: 10px;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+#about .fifth {
+  padding-left: 10px;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+#about .btn-learn-more {
+  color: #47b2e4;
+  border: 2px solid #47b2e4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+}
+
+#about .btn-learn-more:hover {
+  color: white;
+  background-color: #47b2e4;
+  border: 2px solid #47b2e4;
 }
